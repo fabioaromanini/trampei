@@ -1,0 +1,19 @@
+{
+  "name": "trampei_backend",
+  "version": "0.0.1",
+  "description": "Backend para a \"Trampei\", uma plataforma online para divulgação de trampos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabioaromanini/trampei-backend.git"
+  },
+  "author": "fabioaromanini",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fabioaromanini/trampei-backend/issues"
+  },
+  "homepage": "https://github.com/fabioaromanini/trampei-backend#readme"
+}
