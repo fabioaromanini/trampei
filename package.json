@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fabioaromanini/trampei-backend/issues"
   },
-  "homepage": "https://github.com/fabioaromanini/trampei-backend#readme"
+  "homepage": "https://github.com/fabioaromanini/trampei-backend#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
