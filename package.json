@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "Backend para a \"Trampei\", uma plataforma online para divulgação de trampos.",
   "main": "index.js",
+  "engines": {
+    "node": "10.3.0",
+    "npm": "6.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
