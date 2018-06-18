@@ -15,15 +15,23 @@ passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
+passport.deserializeUser((id, done) => {
+  User.findById(id).then(user => {
+    done(null, user);
+  });
+});
+
 passport.use(
   new GoogleStrategy(
     googleLoginKeys,
     (accessToken, refreshToken, profile, done) => {
-      User.findOne({ id: profile.id }).then(existingUser => {
+      User.findOne({ googleId: profile.id }).then(existingUser => {
         if (existingUser) {
-          done(null, user);
+          done(null, existingUser);
         } else {
-          new User({ googleId: profile.id }).save().then(user => done(null, user));
+          new User({ googleId: profile.id })
+            .save()
+            .then(user => done(null, user));
         }
       });
     }
