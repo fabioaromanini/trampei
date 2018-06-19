@@ -22,8 +22,8 @@ trampeiApp.use(
   })
 );
 
-app.use(passport.initialize());
-app.use(passport.session());
+trampeiApp.use(passport.initialize());
+trampeiApp.use(passport.session());
 
 require('./routes/authRoutes')(trampeiApp);
 
