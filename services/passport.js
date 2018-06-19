@@ -1,14 +1,15 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const mongoose = require('mongoose');
-const keys = require('../credentials/dev').google;
+const keys = require('../config/keys').google;
 
 const User = mongoose.model('users');
 
 const googleLoginKeys = {
   clientID: keys.clientID,
   clientSecret: keys.clientSecret,
-  callbackURL: '/auth/google/callback'
+  callbackURL: '/auth/google/callback',
+  proxy: true
 };
 
 passport.serializeUser((user, done) => {

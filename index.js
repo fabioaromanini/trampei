@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 
-const credentials = require('./credentials/dev');
+const keys = require('./config/keys');
 
-const mongoCredentials = credentials.mongo;
-const cookieKey = credentials.cookieKey;
+const mongoCredentials = keys.mongo;
+const cookieKey = keys.cookieKey;
 
 require('./models/User');
 require('./services/passport');
