@@ -25,7 +25,7 @@ class Header extends Component {
 
   renderName() {
     if (this.props.user) {
-      return `oi ${this.props.user.name || ""}`;
+      return <li>{"oi " + this.props.user.name || ''}</li>;
     }
   }
 
@@ -40,9 +40,10 @@ class Header extends Component {
           >
             trampei
           </Link>
-          <p className="center">{this.renderName()}</p>
-          <ul className="right">{this.renderMenu
-        ()}</ul>
+          <ul className="right">
+            {this.renderName()}
+            {this.renderMenu()}
+          </ul>
         </div>
       </nav>
     );
