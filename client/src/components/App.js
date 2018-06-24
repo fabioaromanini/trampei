@@ -6,7 +6,11 @@ import * as actions from '../actions';
 import Header from './Header';
 
 const Landing = () => <h2>Landing</h2>;
-const Trampos = () => <h2>Trampos</h2>;
+const Trampos = () => <ul>
+  <li>trampo 1</li>
+  <li>trampo 2</li>
+  <li>trampo 3</li>
+</ul>;
 const Informacao = () => <h2>Informacao</h2>;
 const Contato = () => <h2>Contato</h2>;
 const CriarTrampo = () => <h2>CriarTrampo</h2>;
