@@ -1,10 +1,9 @@
 # Trampei
 
-Plataforma online desenvolvida em node, express e react. A versão estável mais atual pode ser acessada no servidor de [homologação](http://trampei.herokuapp.com).
+Plataforma online voltada para divulgação de trampos rápidos e informais. Desenvolvida em node, express e react. A versão estável mais atual pode ser acessada no servidor de [homologação](http://trampei.herokuapp.com).
 
 Para rodar o repositório localmente, é necessário
  configurar um arquivo JSON com o nome **local.json** no diretório "/config/crendtials/. O json deve conter a seguinte estrutura:
-
 
     {
       "google": {
