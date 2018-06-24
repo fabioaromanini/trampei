@@ -17,6 +17,9 @@ Para rodar o repositório localmente, é necessário
       "cookieKey": "String aleatória"
     }
 
+### Informações uteis
+
+* O script ```npm run dev``` executa simultaneamente o back e o frontend, ambos com hot reloading, para fins de desenvolvimento.
 * [Instância remota e gratuíta de MongoDB](https://mlab.com)
 * [Como criar Client ID para OAuth 2.0 com Google](https://developers.google.com/identity/protocols/OAuth2)
 **ATENÇÃO:** ao configurar as credenciais, as chaves devem autorizar o redirecionamento para "http://localhost:5000/auth/google/callback" e "http://localhost:3000/auth/google/callback", e aceitar como origem "http://localhost:5000".
