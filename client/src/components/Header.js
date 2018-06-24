@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
-  renderContent() {
-    switch (this.props.auth) {
+  renderMenu() {
+    switch (this.props.user) {
       case null:
         // quando o request tá demorando, é isso que é mostrado
         return '...';
@@ -23,26 +23,34 @@ class Header extends Component {
     }
   }
 
+  renderName() {
+    if (this.props.user) {
+      return `oi ${this.props.user.name || ""}`;
+    }
+  }
+
   render() {
     console.log(this.props);
     return (
       <nav>
         <div className="nav-wrapper">
           <Link
-            to={this.props.auth ? '/trampos' : '/'}
+            to={this.props.user ? '/trampos' : '/'}
             className="brand-logo left"
           >
             trampei
           </Link>
-          <ul className="right">{this.renderContent()}</ul>
+          <p className="center">{this.renderName()}</p>
+          <ul className="right">{this.renderMenu
+        ()}</ul>
         </div>
       </nav>
     );
   }
 }
 
-function mapStateToProps({ auth }) {
-  return { auth };
+function mapStateToProps({ user }) {
+  return { user };
 }
 
 export default connect(mapStateToProps)(Header);
