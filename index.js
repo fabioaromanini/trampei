@@ -31,7 +31,7 @@ if (process.env.ENVIRONMENT === 'dev-server') {
   trampeiApp.use(express.static('client/build'));
 
   const path = require('path');
-  app.get('*', (req, res) => {
+  trampeiApp.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
