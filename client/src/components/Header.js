@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   renderContent() {
     switch (this.props.auth) {
       case null:
+        // quando o request tá demorando, é isso que é mostrado
         return '...';
       case false:
         return (
@@ -26,7 +28,12 @@ class Header extends Component {
     return (
       <nav>
         <div className="nav-wrapper">
-          <a className="left brand-logo">trampei</a>
+          <Link
+            to={this.props.auth ? '/trampos' : '/'}
+            className="brand-logo left"
+          >
+            trampei
+          </Link>
           <ul className="right">{this.renderContent()}</ul>
         </div>
       </nav>
