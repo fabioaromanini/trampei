@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fabioaromanini/trampei-backend.git"
+    "url": "git+https://github.com/fabioaromanini/trampei.git"
   },
   "author": "fabioaromanini",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/fabioaromanini/trampei-backend/issues"
+    "url": "https://github.com/fabioaromanini/trampei/issues"
   },
-  "homepage": "https://github.com/fabioaromanini/trampei-backend#readme",
+  "homepage": "https://github.com/fabioaromanini/trampei#readme",
   "dependencies": {
     "concurrently": "^3.6.0",
     "cookie-session": "^2.0.0-beta.3",
