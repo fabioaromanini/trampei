@@ -1,51 +1,80 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+
+import { Layout, Menu } from 'antd';
 
 class Header extends Component {
-  renderMenu() {
-    switch (this.props.user) {
-      case null:
-        // quando o request tá demorando, é isso que é mostrado
-        return '...';
-      case false:
-        return (
-          <li>
-            <a href="/auth/google">logar com o google</a>
-          </li>
-        );
-      default:
-        return (
-          <li>
-            <a href="/auth/logout">logout</a>
-          </li>
-        );
-    }
+  constructor(props) {
+    super(props);
+    this.state = { selected: 'trampos' };
   }
 
-  renderName() {
+  handleTitleClick = e => {
     if (this.props.user) {
-      return <li>{"oi " + this.props.user.name || ''}</li>;
+      this.setState({ selected: 'trampos' });
+      this.props.history.push('/trampos');
+    } else {
+      this.setState({ selected: 'home' });
+      this.props.history.push('/');
     }
+  };
+
+  handleMenuClick = e => {
+    if (e.key === 'contato') {
+      this.setState({ selected: 'contato' });
+      this.props.history.push('/contato');
+    } else if (e.key === 'trampos') {
+      this.setState({ selected: 'trampos' });
+      this.props.history.push('/trampos');
+    } else if (e.key === 'home') {
+      this.setState({ selected: 'home' });
+      this.props.history.push('/');
+    } else {
+      this.setState({ selected: null });
+    }
+  };
+
+  tramposOrHome() {
+    if (this.props.user) {
+      return <Menu.Item key="trampos">Trampos</Menu.Item>;
+    }
+    return <Menu.Item key="home">Home</Menu.Item>;
+  }
+
+  loginOrLogout() {
+    if (this.props.user) {
+      return (
+        <Menu.Item key="logout">
+          <a href="/auth/logout">Logout</a>
+        </Menu.Item>
+      );
+    }
+    return (
+      <Menu.Item key="login">
+        <a href="/auth/google">Login com Google</a>
+      </Menu.Item>
+    );
   }
 
   render() {
-    console.log(this.props);
     return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link
-            to={this.props.user ? '/trampos' : '/'}
-            className="brand-logo left"
-          >
-            trampei
-          </Link>
-          <ul className="right">
-            {this.renderName()}
-            {this.renderMenu()}
-          </ul>
-        </div>
-      </nav>
+      <Layout.Header>
+        <a onClick={this.handleTitleClick}>
+          <div className="logo" />
+        </a>
+        <Menu
+          theme="dark"
+          onClick={this.handleMenuClick}
+          selectedKeys={[this.state.selected]}
+          mode="horizontal"
+          style={{ lineHeight: '64px' }}
+        >
+          {this.tramposOrHome()}
+          <Menu.Item key="contato">Contato</Menu.Item>
+          {this.loginOrLogout()}
+        </Menu>
+      </Layout.Header>
     );
   }
 }
@@ -54,4 +83,5 @@ function mapStateToProps({ user }) {
   return { user };
 }
 
-export default connect(mapStateToProps)(Header);
+const component = withRouter(Header);
+export default connect(mapStateToProps)(component);
