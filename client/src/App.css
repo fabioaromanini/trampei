@@ -1,14 +1,59 @@
 @import '~antd/dist/antd.css';
 
+body * {
+  font-family: 'Neucha', cursive !important;
+}
+
+.layout {
+  height: 100%;
+}
+
 .logo {
   width: 120px;
   height: 31px;
-  background: rgba(255, 255, 255, 0.2);
   margin: 16px 24px 16px 0;
   float: left;
+}
+
+#root,
+.container {
+  height: 100%;
+}
+
+.ant-layout-content {
+  display: flex;
+  height: 88%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  text-align: center;
+  width: 60%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing h1 {
+  font-size: 8vw;
+  flex-basis: 100%;
+}
+
+.landing p {
+  font-size: 1.25em;
+  align-self: flex-start;
+}
+
+.header {
+  line-height: 64px;
+  font-size: 1.4em;
 }
 
 .footer {
   background-color: #cacaca;
   text-align: center;
+  font-size: 1.4em;
 }

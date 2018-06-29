@@ -10,18 +10,18 @@ class Header extends Component {
     this.state = { selected: 'trampos' };
   }
 
-  handleTitleClick = e => {
-    if (this.props.user) {
-      this.setState({ selected: 'trampos' });
-      this.props.history.push('/trampos');
-    } else {
-      this.setState({ selected: 'home' });
-      this.props.history.push('/');
-    }
-  };
+  handleTitleClick = e => {};
 
   handleMenuClick = e => {
-    if (e.key === 'contato') {
+    if (e.key === 'logo') {
+      if (this.props.user) {
+        this.setState({ selected: 'trampos' });
+        this.props.history.push('/trampos');
+      } else {
+        this.setState({ selected: 'home' });
+        this.props.history.push('/');
+      }
+    } else if (e.key === 'contato') {
       this.setState({ selected: 'contato' });
       this.props.history.push('/contato');
     } else if (e.key === 'trampos') {
@@ -60,16 +60,16 @@ class Header extends Component {
   render() {
     return (
       <Layout.Header>
-        <a onClick={this.handleTitleClick}>
-          <div className="logo" />
-        </a>
         <Menu
           theme="dark"
           onClick={this.handleMenuClick}
           selectedKeys={[this.state.selected]}
           mode="horizontal"
-          style={{ lineHeight: '64px' }}
+          className="header"
         >
+          <Menu.Item key="logo">
+            <b>#trampei</b>
+          </Menu.Item>
           {this.tramposOrHome()}
           <Menu.Item key="contato">Contato</Menu.Item>
           {this.loginOrLogout()}

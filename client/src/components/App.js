@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-import { Layout } from 'antd';
+import { Layout, Affix } from 'antd';
 
 import Header from './Header';
 import Landing from './Landing';
@@ -30,7 +30,9 @@ class App extends Component {
       <Layout className="layout">
         <BrowserRouter>
           <div className="container">
-            <Header />
+            <Affix>
+              <Header />
+            </Affix>
             <Layout.Content>
               <Route exact path="/" component={Landing} />
               <Route path="/trampos" component={Trampos} />
