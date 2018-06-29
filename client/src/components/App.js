@@ -6,6 +6,7 @@ import { Layout } from 'antd';
 
 import Header from './Header';
 import Landing from './Landing';
+import Footer from './Footer';
 
 // dummy que devem ser transformados em componentes mais cedo ou mais tade
 const Trampos = () => (
@@ -37,6 +38,7 @@ class App extends Component {
               <Route path="/informacao" component={Informacao} />
               <Route path="/trampos/novo" component={CriarTrampo} />
             </Layout.Content>
+            <Footer />
           </div>
         </BrowserRouter>
       </Layout>
