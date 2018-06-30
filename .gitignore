@@ -62,3 +62,7 @@ typings/
 
 # credentials for google apis
 config/credentials/local.json
+
+# sensitive data
+Makefile
+entrypoint.sh
