@@ -9,10 +9,12 @@ body * {
 }
 
 .logo {
-  width: 120px;
-  height: 31px;
-  margin: 16px 24px 16px 0;
-  float: left;
+  display: inline-block;
+}
+
+.logo a {
+  font-size: 1.9em;
+  color: #9f9f86;
 }
 
 #root,
@@ -50,6 +52,8 @@ body * {
 .header {
   line-height: 64px;
   font-size: 1.4em;
+  position: relative;
+  float: right;
 }
 
 .footer {
