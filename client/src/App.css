@@ -6,8 +6,9 @@ html {
 
 body,
 #root,
-.ant-layout,
-.container {
+.layout,
+.container,
+.side-menu {
   min-height: 100vh;
 }
 
@@ -29,7 +30,7 @@ body * {
   color: #9f9f86;
 }
 
-.ant-layout-content {
+.layout {
   flex: 1 1 0;
 }
 
@@ -45,4 +46,16 @@ body * {
   text-align: center;
   font-size: 1.5em;
   padding: 1rem;
+}
+
+.ant-layout {
+  height: 100vh;
+}
+
+#toggle-menu {
+  border-radius: 0px 0px 0px 4px;
+  background-color: #001529;
+  border-color: #001529;
+  float: right;
+  color: #9f9f86;
 }
