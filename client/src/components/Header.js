@@ -10,8 +10,6 @@ class Header extends Component {
     this.state = { selected: 'trampos' };
   }
 
-  handleTitleClick = e => {};
-
   handleMenuClick = e => {
     if (e.key === 'logo') {
       if (this.props.user) {
@@ -51,9 +49,14 @@ class Header extends Component {
       );
     }
     return (
-      <Menu.Item key="login">
-        <a href="/auth/google">Login com Google</a>
-      </Menu.Item>
+      <Menu.SubMenu title={<span>Login</span>}>
+        <Menu.Item key="login-google">
+          <a href="/auth/google">Google</a>
+        </Menu.Item>
+        <Menu.Item key="login-facebook" disabled>
+          Facebook
+        </Menu.Item>
+      </Menu.SubMenu>
     );
   }
 

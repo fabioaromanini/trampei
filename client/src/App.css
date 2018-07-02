@@ -19,7 +19,7 @@ body * {
 .container {
   height: 100%;
 }
-
+/*
 .ant-layout-content {
   display: flex;
   height: 88%;
@@ -35,9 +35,9 @@ body * {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.landing h1 {
+/* .landing h1 {
   font-size: 8vw;
   flex-basis: 100%;
 }
@@ -45,7 +45,7 @@ body * {
 .landing p {
   font-size: 1.25em;
   align-self: flex-start;
-}
+} */
 
 .header {
   line-height: 64px;
