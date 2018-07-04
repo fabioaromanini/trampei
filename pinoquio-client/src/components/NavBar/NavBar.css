@@ -24,3 +24,9 @@ a {
   text-decoration: none;
   padding: 0 0.5em;
 }
+
+#greetings {
+  padding-right: 1em;
+  font-weight: bold;
+  color: white;
+}
