@@ -28,7 +28,7 @@ trampeiApp.use(passport.session());
 require('./routes/authRoutes')(trampeiApp);
 
 if (process.env.ENVIRONMENT === 'dev-server') {
-  trampeiApp.use(express.static('client/build'));
+  trampeiApp.use(express.static('pinoquio-client/build'));
 
   const path = require('path');
   trampeiApp.get('*', (req, res) => {
