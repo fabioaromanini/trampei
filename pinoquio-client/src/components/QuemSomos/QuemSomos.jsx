@@ -5,7 +5,7 @@ import './QuemSomos.css';
 import friendsPic from './Happy-Friends.jpg';
 
 const QuemSomos = () => (
-    <div className="QuemSomos">
+    <div className="QuemSomos content-container">
         <div className="QuemSomos_details">
             <div className="QuemSomos_details_text">
                 <h1>Quem somos</h1>
@@ -20,7 +20,7 @@ const QuemSomos = () => (
                     USP de São Carlos, esta iniciativa garante eficiência,
                     qualidade, segurança e ganho de tempo para quem precisa de dinheiro
                     rápido, mas não faz ideia por onde começar. Porém, como bons computeiros,
-                    somos especialistas em apresentar uma solução simples 
+                    somos especialistas em apresentar uma solução simples
                     para problemas complexos.
                 </p>
                 <p>

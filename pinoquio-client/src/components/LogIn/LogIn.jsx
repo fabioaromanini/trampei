@@ -5,7 +5,7 @@ import googleIcon from './googleicon.png'
 import "./LogIn.css";
 
 const LogIn = () => (
-    <div className="Login">
+    <div className="Login content-container">
         <div className="Login_box">
             <h1>Log In</h1>
             <p>textinho sobre nossa filosofia de login</p>

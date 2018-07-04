@@ -4,9 +4,8 @@ import Card from './Card';
 import './Trampos.css';
 
 const Trampos = () => (
-    <div className="Trampos">
-        <div className="Trampos_Row">
-            <Card 
+    <div className="Trampos content-container">
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -15,7 +14,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -24,7 +23,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -33,9 +32,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-        </div>
-        <div className="Trampos_Row">
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -44,7 +41,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -53,7 +50,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -62,9 +59,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-        </div>
-        <div className="Trampos_Row">
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -73,7 +68,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -82,7 +77,7 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-            <Card 
+            <Card
             isACompany={true}
             trampo="Barman"
             quem="TUSCA"
@@ -91,7 +86,6 @@ const Trampos = () => (
             pagamento="R$140,00"
             contato="(16) 99115-9094"
             />
-        </div>
     </div>
 );
 

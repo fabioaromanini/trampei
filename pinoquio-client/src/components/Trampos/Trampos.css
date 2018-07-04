@@ -1,9 +1,9 @@
-.Trampos{
-    background-color: #447D5F;
-    height: 100vh;
+.Trampos {
+  height: 100%;
+  background-color: #447d5f;
 }
 
-.Trampos_Row{
-    display: flex;
-    justify-content: space-around;
+.Trampos_Row {
+  display: flex;
+  justify-content: space-around;
 }

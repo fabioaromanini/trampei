@@ -1,6 +1,9 @@
-.App{
-    font-family: Helvetica, Arial, sans-serif;
-    width: 980px;
-    margin: 0px auto;
-    height: 100vh;
+.App {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 980px;
+  margin: 0px auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vh;
 }

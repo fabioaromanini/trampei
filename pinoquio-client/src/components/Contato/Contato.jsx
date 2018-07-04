@@ -3,7 +3,7 @@ import React from 'react';
 import './Contato.css';
 
 const Contato = () => (
-    <div className="Contato">
+    <div className="Contato content-container">
         <div className="Contato_Box">
             <h1>Fale conosco</h1>
             <p>
@@ -12,7 +12,7 @@ const Contato = () => (
             </p>
             <form>
                 <label>
-                    <input 
+                    <input
                         type="text"
                         name="email"
                         placeholder="Insira seu E-mail"
@@ -31,8 +31,8 @@ const Contato = () => (
                 </label>
                 <input
                     className="Contato_submit"
-                    type="submit" 
-                    value="Submit" 
+                    type="submit"
+                    value="Submit"
                 />
             </form>
         </div>
