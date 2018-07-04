@@ -1,0 +1,46 @@
+.QuemSomos{
+    width: 100%;
+    height: 100%;
+    background-color: #447D5F;
+}
+
+.QuemSomos h1{
+    margin: 0px;
+    color: #E6E6E6;
+    text-align: center;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.QuemSomos h2{
+    margin: 0px;
+    color: #E6E6E6;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.QuemSomos_details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.QuemSomos_details_text{
+    padding: 20px 40px;
+    width: 450px;
+}
+
+.QuemSomos_details_text p{
+    color: #E6E6E6;
+    text-indent: 60px;
+}
+
+.QuemSomos_details_img{
+    height: 100%;
+    align-self: center;
+}
+
+.QuemSomos_details img{
+    height: 300px;
+}
+

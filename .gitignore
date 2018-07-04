@@ -60,9 +60,10 @@ typings/
 # next.js build output
 .next
 
-# credentials for google apis
+# credentials for google apis and other sensitive data
 config/credentials/local.json
-
-# sensitive data
 Makefile
 entrypoint.sh
+
+# toy client used to test frontend before actual frontend was implemented
+old-client

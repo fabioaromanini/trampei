@@ -1,0 +1,9 @@
+.Trampos{
+    background-color: #447D5F;
+    height: 100vh;
+}
+
+.Trampos_Row{
+    display: flex;
+    justify-content: space-around;
+}

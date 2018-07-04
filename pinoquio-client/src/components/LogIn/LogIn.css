@@ -1,0 +1,52 @@
+.Login{
+    width: 100%;
+    height: 100vh;
+    background-color: #447D5F;
+    color: #E6E6E6;
+}
+
+.Login_box{
+    padding-top: 60px;
+    width: 525px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.Login h1{
+    margin: 10px;
+    font-size: 90px;
+    font-weight: normal;
+    margin: 0px auto;
+}
+
+.Login p{
+    margin: 30px;
+}
+
+.Login_Facebook{
+    margin: 0px auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #295396; 
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.Login_Google{
+    margin: 0px auto;   
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #EC5144;
+    color: #E6E6E6; 
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.Login img{
+    height: 60px;
+}
+

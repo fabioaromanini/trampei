@@ -1,0 +1,58 @@
+.Card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    color: #E6E6E6;
+}
+
+/* On mouse-over, add a deeper shadow */
+.Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.Card_Paycheck{
+    text-align: end;
+    font-size: 30px;
+    margin: 10px;
+    color: #E6E6E6;
+}
+
+.Card_Details p{
+    margin: 0px 5px;
+}
+
+.Card_Trampo{
+    font-size: 30px;
+}
+
+.Card_Quem{
+    font-size: 14px;
+}
+
+.Card_Quando{
+    font-size: 12px;
+}
+
+.Card_IsCompany{
+    text-align: end;
+    margin: 5px;
+    font-size: 25px;
+    color: #E6E6E6;
+    text-decoration: underline;
+}
+
+.Card_Local{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Card_Local p{
+    margin-right: 50%
+}
+
+.Card_Contato {
+    font-weight: bold;
+    font-size: 15px;
+}
