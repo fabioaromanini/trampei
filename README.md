@@ -1,6 +1,8 @@
-# Trampei
+# Trampei backend
 
-Plataforma online voltada para divulgação de trampos rápidos e informais. Desenvolvida utilizando: node, express, docker, mongo e react. A versão estável mais atual pode ser acessada no servidor de [homologação](http://trampei.herokuapp.com).
+A trampei é uma plataforma online voltada para divulgação de trampos rápidos e informais. A versão estável mais atual pode ser acessada no servidor de [testes](http://trampei.herokuapp.com).
+
+Desenvolvido utilizando: nodejs, express, docker, mongo e react.
 
 Para **rodar o repositório localmente**, é necessário
 configurar um arquivo JSON com o nome **local.json** no diretório "/config/credentials/. O json deve conter a seguinte estrutura:
