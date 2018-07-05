@@ -1,6 +1,6 @@
 # Trampei backend
 
-A trampei é uma plataforma online voltada para divulgação de trampos rápidos e informais. A versão estável mais atual pode ser acessada no servidor de [testes](http://trampei.herokuapp.com).
+A trampei é uma plataforma online voltada para divulgação de trampos rápidos e informais. A versão estável mais atual pode ser acessada no servidor de [testes](https://trampei-layout-alternativo.herokuapp.com).
 
 Desenvolvido utilizando: nodejs, express, docker, mongo e react.
 
