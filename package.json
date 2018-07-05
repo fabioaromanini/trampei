@@ -1,11 +1,10 @@
 {
   "name": "trampei_backend",
   "version": "0.0.1",
-  "description":
-    "Backend para a \"Trampei\", uma plataforma online para divulgação de trampos.",
+  "description": "Backend para a \"Trampei\", uma plataforma online para divulgação de trampos.",
   "main": "index.js",
   "engines": {
-    "node": "10.3.0",
+    "node": "10.5.0",
     "npm": "6.1.0"
   },
   "scripts": {
@@ -13,10 +12,8 @@
     "client": "npm run start --prefix pinoquio-client",
     "server": "nodemon index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix pinoquio-client && npm run build --prefix pinoquio-client",
-    "build":
-      "npm install --prefix pinoquio-client && npm run build --prefix pinoquio-client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix pinoquio-client && npm run build --prefix pinoquio-client",
+    "build": "npm install --prefix pinoquio-client && npm run build --prefix pinoquio-client"
   },
   "repository": {
     "type": "git",
