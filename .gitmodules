@@ -1,0 +1,3 @@
+[submodule "mrpinoquioclient"]
+	path = mrpinoquioclient
+	url = https://github.com/mrpinoquio/trampei.git
