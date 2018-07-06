@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
+const bodyParser = require('body-parser');
 
 const keys = require('./config/keys');
 
@@ -15,6 +16,7 @@ mongoose.connect(mongoCredentials.uri);
 
 const trampeiApp = express();
 
+trampeiApp.use(bodyParser.json());
 trampeiApp.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 1000,
@@ -25,6 +27,7 @@ trampeiApp.use(
 trampeiApp.use(passport.initialize());
 trampeiApp.use(passport.session());
 
+require('./routes/trampoRoutes')(trampeiApp);
 require('./routes/authRoutes')(trampeiApp);
 
 if (process.env.ENVIRONMENT === 'dev-server') {
